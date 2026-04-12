@@ -45,6 +45,7 @@ $(() => {
   $('.js-inview').each(function inviewHandler() {
     $(this).bind('inview', (event, isInView, visiblePartX, visiblePartY) => {
     // $(this).bind('inview', (event, isInView) => {
+      console.log(visiblePartY, 'visiblePartY')
       if (
         ($(this).hasClass('js-inview-top') && isInView)
         || (!$(window).width() > 480 ? visiblePartY === 'center' || visiblePartY === 'bottom' : isInView)
