@@ -1,0 +1,48 @@
+@use 'variables';
+@use 'overrides';
+@use './base/resets';
+@use './base/fonts';
+@use './components/main';
+@use './components/locations';
+@use './components/slider';
+@use './components/timer';
+
+body.lang-am {
+  .lang-ru {
+    display: none !important;
+  }
+}
+
+body.lang-ru {
+  .lang-am {
+    display: none !important;
+  }
+}
+
+.confetti {
+  position: absolute;
+  pointer-events: none;
+}
+
+@keyframes confetti-fall {
+  0% {
+    transform: translateY(-100px) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(1000px) rotate(720deg);
+    opacity: 0;
+  }
+}
+
+@keyframes confetti-explode {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(var(--tx), var(--ty)) rotate(var(--r));
+    opacity: 0;
+  }
+}
+

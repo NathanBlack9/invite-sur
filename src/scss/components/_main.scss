@@ -1,0 +1,337 @@
+.main {
+  overflow: hidden;
+  position: relative;
+  height: 100vh;
+  background: url('/img/back-new.jpg') 0 0 / cover no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  transition: all 2s ease;
+  transform: scale(1.1);
+  opacity: 0;
+
+  &.inview {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+.main-letters {
+  font-family: 'MonsieurLaDoulaise';
+  font-size: 10em;
+  color: white;
+  margin-top: auto;
+  display: flex;
+  justify-content: center;
+  opacity: 0;
+  transform: scale(2);
+  transition: all 2s ease;
+  transition-delay: 1.5s;
+
+  .inview & {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.main-names {
+  font-family: 'CormorantUnicase';
+  font-size: 2.5em;
+  text-transform: uppercase;
+  color: white;
+  transition: all 2s ease;
+  transition-delay: 4s;
+  transform: scale(1.5);
+  opacity: 0;
+
+  p span {
+    font-size: 1.25em;
+    line-height: 1;
+  }
+
+  .inview & {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+.main-date {
+  font-family: 'CormorantUnicase';
+  margin-bottom: 20px;
+  margin-top: 15px;
+  font-size: 2.5em;
+  font-weight: 600;
+  color: white;
+  transition: all 2s ease;
+  transition-delay: 4.5s;
+  transform: translateY(15px);
+  opacity: 0;
+
+  .inview & {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+.main-arrow {
+  height: 25px;
+  margin-top: 15px;
+  opacity: 0;
+  transition: all 5s ease;
+  transition-delay: 6s;
+
+  .inview & {
+    opacity: 1;
+  }
+}
+
+.torn {
+  color: black;
+  font-size: 2em;
+  position: relative;
+  background-color: white; // #f6f0eb
+  padding: 35px 20px;
+}
+
+.torn-title {
+  font-size: 2rem; // 50px
+  text-align: center;
+  transition: all 1.5s ease;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  // opacity: 0;
+  // transform: translateX(-25%);
+
+  // &.inview {
+  //   opacity: 1;
+  //   transform: translateX(0);
+  // }
+}
+
+.torn-desc {
+  text-align: center;
+}
+
+.torn-calendar {
+  margin-top: 65px;
+  opacity: 0;
+  transition: all 2s ease;
+  transform: translateY(50%);
+
+  &.inview {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.torn-calendar__title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.plan {
+  background: black;
+  color: white;
+  padding: 20px;
+}
+
+.plan-title {
+  font-family: Caravan;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  gap: 20px;
+  font-size: 4rem;
+  line-height: 0.6;
+
+  transition: all 1.5s ease;
+  opacity: 0;
+  transform: translateX(20px);
+
+  .inview & {
+    transform: none;
+    opacity: 1;
+  }
+
+  &::after {
+    content: '';
+    display: block;
+    width: 120px;
+    border-top: 1px solid white;
+  }
+}
+
+.plan-space {
+  display: block;
+  width: 100%;
+  height: 20px;
+  border-right: 1px solid white;
+  opacity: 0;
+  transition: all 1.5s ease;
+  transform: translateY(-10px);
+  margin: 20px 0;
+
+  .plan-title + & {
+    transition-delay: 0.5s;
+  }
+
+  .plan-list__item:nth-child(1) & {
+    transition-delay: 1s;
+  }
+
+  .plan-list__item:nth-child(2) & {
+    transition-delay: 1.5s;
+  }
+
+  .plan-list__item:nth-child(3) & {
+    transition-delay: 2s;
+  }
+
+  .inview & {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+.plan-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.plan-list__item {
+  display: flex;
+  align-items: end;
+  flex-direction: column;
+  width: 100%;
+}
+
+.play-list__item-time {
+  font-size: 1.9rem;
+  transition: all 1s ease;
+  opacity: 0;
+  transform: translateX(10px);
+
+  .inview & {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  .plan-list__item:nth-child(1) & {
+    transition-delay: 0.5s;
+  }
+
+  .plan-list__item:nth-child(2) & {
+    transition-delay: 1s;
+  }
+
+  .plan-list__item:nth-child(3) & {
+    transition-delay: 1.5s;
+  }
+
+  .plan-list__item:nth-child(4) & {
+    transition-delay: 2s;
+  }
+}
+
+.play-list__item-desc {
+  letter-spacing: 1px;
+  font-size: 1.5em;
+  text-align: right;
+  transition: all 1s ease;
+  opacity: 0;
+  transform: translateX(10px);
+
+  .plan-list__item:nth-child(1) & {
+    transition-delay: 0.5s;
+  }
+
+  .plan-list__item:nth-child(2) & {
+    transition-delay: 1s;
+  }
+
+  .plan-list__item:nth-child(3) & {
+    transition-delay: 1.5s;
+  }
+
+  .plan-list__item:nth-child(4) & {
+    transition-delay: 2s;
+  }
+
+  .inview & {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
+
+
+.footer {
+  font-family: CormorantUnicase;
+  padding: 30px 20px 35px;
+
+  p {
+    font-size: 1.6em;
+    font-style: italic;
+  }
+
+  .title {
+    font-size: 2.2em;
+    text-align: center;
+    font-style: normal;
+  }
+}
+
+.remark {
+  padding: 30px 50px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-size: 1.8em;
+  font-style: italic;
+}
+
+.handwriting-text {
+  margin: auto;
+  width: 70vw;
+  height: 160px;
+}
+
+.handwriting-text path {
+  /* Делаем видимыми обводку */
+  stroke: #ffffff;
+  stroke-width: 0.6;
+  // stroke-linecap: round;
+  // stroke-linejoin: round;
+
+  /* Скрываем заливку во время анимации */
+  fill: none;
+
+  /* Анимация */
+  stroke-dasharray: var(--length);
+  stroke-dashoffset: var(--length);
+  animation: write 10s ease-in-out forwards;
+  animation-delay: 2s;
+}
+
+@keyframes write {
+  to {
+    stroke-dashoffset: 0;
+    // fill: #fff;
+  }
+}
+
+// /* После анимации показываем заливку */
+// .handwriting-text.animated path {
+//   animation: write 10s linear forwards, fillText 10s 3s forwards;
+// }
+
+// @keyframes fillText {
+//   to {
+//     fill: #fff;
+//     // stroke: none;
+//   }
+// }

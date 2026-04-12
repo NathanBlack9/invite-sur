@@ -1,0 +1,49 @@
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'CormorantUnicase', sans-serif;
+  font-style: normal;
+  color: black;
+  letter-spacing: 0.01px;
+  position: relative;
+  font-size: 10px;
+  background-color: white; //#f6f0eb
+
+  *::selection{
+		background-color: black;
+    color: white;
+	}
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+h1, h2, h3,
+h4, h5, h6 {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  // width: 100%;
+  height: 100%;
+}
+
+textarea {
+  font-family: inherit;
+  font-weight: inherit;
+  resize: none;
+}
+
+.container {
+  @media only screen and (min-width: 401px) {
+    padding: 0 20px;
+  }
+}
