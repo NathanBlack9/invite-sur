@@ -22,9 +22,9 @@ function smoothPower(distance, duration) {
 $(() => {
   // playMusic();
 
-  setTimeout(() => {
-    $('.js-first-animation').addClass('inview');
-  }, 500);
+  // setTimeout(() => {
+  //   $('.js-first-animation').addClass('inview');
+  // }, 500);
 
   // Прокрутить на 100px за 3 секунды и через 3 секунды
   // if(window.scrollY == 0) {

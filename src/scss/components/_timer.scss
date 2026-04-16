@@ -6,12 +6,13 @@
   background-image: url('../../img/timer-bg.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position-x: 100%;
+  background-position: center;
   background-attachment: fixed;
   padding: 35px;
   color: white;
   position: relative;
   z-index: 1;
+  height: 200px;
 
   &::before {
     content: '';
