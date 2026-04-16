@@ -18,3 +18,6 @@ package-lock.json
 .env.production.local
 
 npm-debug.log*
+
+/img/main*.jpg
+!/img/main-3-wrapped.jpg
