@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Bainsley';
-  src: url('./src/fonts/Bainsley_Bold.otf') format('opentype');
+  src: url('/src/fonts/Bainsley_Bold.otf') format('opentype');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -8,7 +8,7 @@
 
 @font-face {
   font-family: 'Bainsley';
-  src: url('./src/fonts/Bainsley_Bold_Italic.otf') format('opentype');
+  src: url('/src/fonts/Bainsley_Bold_Italic.otf') format('opentype');
   font-weight: 700;
   font-style: italic;
   font-display: swap;
@@ -16,7 +16,7 @@
 
 @font-face {
   font-family: 'Bainsley';
-  src: url('./src/fonts/Bainsley_Italic.otf') format('opentype');
+  src: url('/src/fonts/Bainsley_Italic.otf') format('opentype');
   font-weight: 400;
   font-style: italic;
   font-display: swap;
@@ -24,7 +24,7 @@
 
 @font-face {
   font-family: 'Bainsley';
-  src: url('./src/fonts/Bainsley_Roman.otf') format('opentype');
+  src: url('/src/fonts/Bainsley_Roman.otf') format('opentype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -32,7 +32,7 @@
 
 @font-face {
   font-family: 'Calama';
-  src: url('./src/fonts/Calama_new.ttf') format('truetype');
+  src: url('/src/fonts/Calama_new.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -40,7 +40,7 @@
 
 @font-face {
   font-family: 'Xarrovv';
-  src: url('./src/fonts/Xarrovv.otf') format('opentype');
+  src: url('/src/fonts/Xarrovv.otf') format('opentype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -48,7 +48,7 @@
 
 @font-face {
   font-family: 'Xarrovv';
-  src: url('./src/fonts/XarrovvBold.otf') format('opentype');
+  src: url('/src/fonts/XarrovvBold.otf') format('opentype');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -56,19 +56,19 @@
 
 @font-face {
   font-family: 'Caravan';
-  src: url('./src/fonts/Caravan.eot');
+  src: url('/src/fonts/Caravan.eot');
   src: local('Caravan'),
-    url('./src/fonts/Caravan.eot?#iefix') format('embedded-opentype'),
-    url('./src/fonts/Caravan.woff2') format('woff2'),
-    url('./src/fonts/Caravan.woff') format('woff'),
-    url('./src/fonts/Caravan.ttf') format('truetype');
+    url('/src/fonts/Caravan.eot?#iefix') format('embedded-opentype'),
+    url('/src/fonts/Caravan.woff2') format('woff2'),
+    url('/src/fonts/Caravan.woff') format('woff'),
+    url('/src/fonts/Caravan.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'MonsieurLaDoulaise';
-  src: url('./src/fonts/MonsieurLaDoulaise-Regular.ttf') format('truetype');
+  src: url('/src/fonts/MonsieurLaDoulaise-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -76,7 +76,7 @@
 
 @font-face {
   font-family: 'CormorantUnicase';
-  src: url('./src/fonts/CormorantUnicase-Regular.ttf') format('truetype');
+  src: url('/src/fonts/CormorantUnicase-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -84,7 +84,7 @@
 
 @font-face {
   font-family: 'CormorantUnicase';
-  src: url('./src/fonts/CormorantUnicase-Semibold.ttf') format('truetype');
+  src: url('/src/fonts/CormorantUnicase-Semibold.ttf') format('truetype');
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -92,7 +92,7 @@
 
 @font-face {
   font-family: 'CormorantUnicase';
-  src: url('./src/fonts/CormorantUnicase-Medium.ttf') format('truetype');
+  src: url('/src/fonts/CormorantUnicase-Medium.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -100,7 +100,7 @@
 
 @font-face {
   font-family: 'CormorantUnicase';
-  src: url('./src/fonts/CormorantUnicase-Light.ttf') format('truetype');
+  src: url('/src/fonts/CormorantUnicase-Light.ttf') format('truetype');
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -108,7 +108,7 @@
 
 @font-face {
   font-family: 'CormorantUnicase';
-  src: url('./src/fonts/CormorantUnicase-Bold.ttf') format('truetype');
+  src: url('/src/fonts/CormorantUnicase-Bold.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
