@@ -1,7 +1,7 @@
 .main {
   overflow: hidden;
   position: relative;
-  height: 100dvh;
+  height: 650px;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -15,7 +15,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 100dvh;
+    height: 650px;
     background: url('../../img/back-new.jpg') 0 0 / cover no-repeat;
     z-index: -1;
   }
