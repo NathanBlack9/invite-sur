@@ -45,10 +45,11 @@ $(() => {
   $('.js-inview').each(function inviewHandler() {
     $(this).bind('inview', (event, isInView, visiblePartX, visiblePartY) => {
     // $(this).bind('inview', (event, isInView) => {
-      console.log(visiblePartY, 'visiblePartY')
       if (!$(window).width() > 480 ? visiblePartY === 'bottom' : isInView) {
-        $(this).addClass('inview').unbind('inview');
+        $(this).addClass('inview'); // .unbind('inview');
         $(this).trigger('inviewTriggered');
+      } else {
+        $(this).removeClass('inview');
       }
       $(window).trigger('inviewTriggered');
     });

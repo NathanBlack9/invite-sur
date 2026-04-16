@@ -1,6 +1,7 @@
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -11,6 +12,7 @@ body {
   position: relative;
   font-size: 10px;
   background-color: white; //#f6f0eb
+  overflow-x: hidden;
 
   *::selection{
 		background-color: black;
