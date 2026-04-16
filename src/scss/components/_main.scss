@@ -3,7 +3,6 @@
   position: relative;
   height: 100dvh;
   background: url('../../img/back-new.jpg') 0 0 / cover no-repeat;
-  background-attachment: fixed;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -205,7 +204,7 @@
 
 .plan-list__item {
   display: flex;
-  align-items: end;
+  align-items: flex-end;
   flex-direction: column;
   width: 100%;
 }
